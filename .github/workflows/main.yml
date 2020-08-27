@@ -21,4 +21,6 @@ jobs:
     container: node:latest
     steps:
       - name: Installation
-        run: npx semantic-release
+        run: |
+          echo "Rodando primeiro comando"
+          npx semantic-release
