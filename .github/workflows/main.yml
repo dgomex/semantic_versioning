@@ -18,7 +18,9 @@ jobs:
 #      image: node:latest
 #      env:
 #        GITHUB_TOKEN: 338206d4443e6d1aadb9cd1de77943fa54ce8944
-    steps:
+    env:
+      GITHUB_TOKEN: 338206d4443e6d1aadb9cd1de77943fa54ce8944
+    steps:     
       - name: Installation
         run: |
           ls
