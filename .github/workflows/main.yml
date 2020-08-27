@@ -20,7 +20,9 @@ jobs:
 #        GITHUB_TOKEN: 338206d4443e6d1aadb9cd1de77943fa54ce8944
     env:
       GITHUB_TOKEN: 338206d4443e6d1aadb9cd1de77943fa54ce8944
-    steps:     
+    steps:
+      - name: Git_Checkout
+        uses: actions/checkout     
       - name: Installation
         run: |
           ls
