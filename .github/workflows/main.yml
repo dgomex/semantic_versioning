@@ -24,3 +24,5 @@ jobs:
         run: |
           echo "Rodando primeiro comando"
           npx semantic-release
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
