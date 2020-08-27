@@ -1,10 +1,6 @@
 
 name: CI
 
-env:
-  ACTIONS_STEP_DEBUG: true
-  ACTIONS_RUNNER_DEBUG: true
-
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
@@ -19,10 +15,10 @@ jobs:
   create_versioning:
     runs-on: ubuntu-latest
     container: node:latest
+      env:
+        GITHUB_TOKEN: 338206d4443e6d1aadb9cd1de77943fa54ce8944
     steps:
       - name: Installation
         run: |
           echo "Rodando primeiro comando"
           npx semantic-release
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
