@@ -14,7 +14,8 @@ jobs:
   # This workflow contains a single job called "build"
   create_versioning:
     runs-on: ubuntu-latest
-    container: node:latest
+    container: 
+      image: node:latest
       env:
         GITHUB_TOKEN: 338206d4443e6d1aadb9cd1de77943fa54ce8944
     steps:
