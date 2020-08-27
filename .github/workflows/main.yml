@@ -19,7 +19,7 @@ jobs:
 #      env:
 #        GITHUB_TOKEN: 338206d4443e6d1aadb9cd1de77943fa54ce8944
     env:
-      GITHUB_TOKEN: 338206d4443e6d1aadb9cd1de77943fa54ce8944
+      GITHUB_TOKEN: f4ea18a7e79e248436003cb04ced853852b35d3d
     steps:
       - name: Git_Checkout
         uses: actions/checkout@v1     
